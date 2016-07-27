@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+
+
 </head>
 <body>
-<h1>Если бы на прошлой неделе вы инвестировали в ПАММ-счет успешного управляющего</h1>
-<div class="wrapper">
-    <sidebar>
-        <div class = "header">
-            <span>№ счета</span>
-            <span>Управляющий</span>
-        </div>
-        <div class= "first-user">
+<div class="pre-wrapper">
+<div class = wrapper>
+    <h1>Если бы на прошлой неделе вы<br> инвестировали в ПАММ-счет успешного<br> управляющего</h1>
+    <div class="block">
+        <sidebar>
+            <ul>
+                <li><span>№ счета&nbsp;</span>&nbsp;Управляющий</li>
+                <li><span>11970&nbsp;</span>&nbsp;Galax</li>
+                <li><span>7348&nbsp;</span>&nbsp;Veronica</li>
+                <li><span>10555&nbsp;</span>&nbsp;Dragonfly</li>
+                <li><span>10504&nbsp;</span>&nbsp;Condor</li>
+                <li><span>10469&nbsp;</span>&nbsp;Shark_007</li>
+            </ul>
+        </sidebar>
+        <!--<span class="triangle">▲</span>-->
 
+        <div class = rotate-l></div>
+        <div class = rotate-r></div>
+        <div class = "display">
+            <input id = "myRange" type = range min='0' max='5000' step='1' value='0' oninput='change(this)'>
+            <div class="depozit">
+                Сегодня ваш депозит бы<br> составил<span>&nbsp;1265 $</span>
+            </div>
+            <div class="income">
+                За год при провторении<br> вклада, заработали бы<span>&nbsp;27 432 $</span>
+            </div>
         </div>
-        <div class= "second-user"></div>
-        <div class= "third-user"></div>
-        <div class= "forth-user"></div>
-        <div class= "fifth-user"></div>
-    </sidebar>
-    <div class = "display">
-        <input type = range>
-        <div class="depozit">
-            <span>Сегодня ваш депозит бы составил</span>
-            <span> 1265 $</span>
-        </div>
-        <div class="income">
-            <span>За год при провторении вклада, заработали бы</span>
-            <span> 27 432 $</span>
-        </div>
+        <div><img src="img/bg.png"></div>
     </div>
-
 </div>
+    </div>
 </body>
 </html>
