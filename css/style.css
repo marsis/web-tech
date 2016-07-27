@@ -1,47 +1,49 @@
-#parent {position: relative;}
+
 body{
-    /* IE10+ */
-    background-image: -ms-radial-gradient(center, ellipse farthest-corner, #0168B5 0%, #012152 100%);
-
-    /* Mozilla Firefox */
-    background-image: -moz-radial-gradient(center, ellipse farthest-corner, #0168B5 0%, #012152 100%);
-
-    /* Opera */
-    background-image: -o-radial-gradient(center, ellipse farthest-corner, #0168B5 0%, #012152 100%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #0168B5), color-stop(100, #012152));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #0168B5 0%, #012152 100%);
-
-    /* W3C Markup */
-    background-image: radial-gradient(ellipse farthest-corner at center, #0168B5 0%, #012152 100%);
-    background-repeat: no-repeat;
+    background-image: url(../img/path.jpg);
+   /* background-image: url(../img/bitmap.png);*/
+   
+    /*background-repeat: no-repeat;*/
+/*background-size: 100%*/
 
     font-family: 'Colibri', sans-serif;
     color: #adcc00;
-    height: 600px;
-  /*  background: url("img/bg.png");*/
+   
+    background-size: 100%;
+    
 
 }
 h1{
     text-align: left;
-    font-size: 22px;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 200;
 }
 img{
+    width: 100%;
+    
     display: block;
-    /*position: absolute;
-    top: 100%;
-    left: 50%;
-    height: 30%;
-    width: 50%;
-    margin: -15% 0 0 -25%;*/
-    opacity: 0.4;
-    /*margin:  0 auto;*/
     position: absolute;
+    top: 80%;
+    /*left: 25%;
+    /*height: 30%;*/
+    
+    /*margin: -15% 0 0 -25%;
+
+
+
+/*width: 560px;
+    height: 624px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+margin: -312px 0 0 -280px;*/
+
+    
+    /*margin:  0 auto;*/
+   /* position: absolute;
     right: 200px;
-    top: 550px;
+    top: 550px;*/
 
 }
 .wrapper{
@@ -67,10 +69,12 @@ img{
     margin: -15% 0 0 -25%;*/
     border: 2px solid #005ba4;
     border-radius:  10px;
+    position: relative;
 
 }
 ul>li:first-child{
     font-size: 12px;
+    font-style: italic;
     border-bottom: none;
 }
 ul{
@@ -79,7 +83,7 @@ ul{
     list-style: none;
 }
 ul> li{
-    padding: 5px 0;
+    padding: 7px 0;
     text-align: left;
 
 }
@@ -102,7 +106,7 @@ sidebar{
 }
 .display{
     position: relative;
-    width: 300px;
+    width: 400px;
     float: right;
     color: #94ffea;
 }
@@ -110,11 +114,13 @@ sidebar{
     text-align: left;
     font-size: 12px;
     padding:20px 0;
+     font-style: italic;
+    padding-left: 20px;
 
 }
 .depozit span, .income span{
     text-align: right;
-    font-size: 30px;
+    font-size: 32px;
     float: right;
     clear: both;
     padding: 0;
@@ -122,19 +128,20 @@ sidebar{
 
 input{
     margin-top: 50px;
+    margin-left: 35px;
 }
 input[type=range] {
     -webkit-appearance: none;
-    width: 80%;
-    border-radius: 8px;
+    width: 342px;
+    border-radius: 10px;
     height: 7px;
     border: 1px solid #bdc3c7;
-    background-color: #fff;
+    background-color: #98a3af;
 }
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background-color: #ecf0f1;
-    border: 2px solid #bdc3c7;
+    background-color: #227ad0;
+    border: 4px solid white;
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -145,22 +152,32 @@ input[type='range']::-webkit-slider-thumb {
     position: absolute;
     top: 80px;
     right: 20px;
+    color: #c0d0dc;
+    font-weight: 400;
+
+}
+.depozit, .income{
+   
 }
 .income span{
     position: absolute;
     top: 150px;
     right: 20px;
+     color: #c0d0dc;
+     font-weight: bold;
+     font-size: 
 }
 .active{
     background-color: black;
 }
 .rotate-l {
-    top: 100px;
+    top: 165px;
+    left: 150px;
     position: absolute;
-    width: 180px;
+    width: 115px;
 
     border: 1px solid black;
-    transform: rotate(45deg);
+    transform: rotate(110deg);
     -webkit-box-shadow: 2px -6px 24px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px -6px 24px 2px rgba(0,0,0,0.75);
     box-shadow: 2px -6px 24px 2px rgba(0,0,0,0.75);
@@ -168,13 +185,14 @@ input[type='range']::-webkit-slider-thumb {
     border: 1px solid rgba(18, 75, 125, 0.96);
 }
 .rotate-r {
-    top: 100px;
+    top: 55px;
+    left: 150px;
     position: absolute;
 
-    width: 180px;
+    width: 116px;
 
     border: 1px solid rgba(18, 75, 125, 0.96);
-    transform: rotate(-45deg);
+    transform: rotate(250deg);
     -webkit-box-shadow: 2px 8px 24px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 8px 24px 2px rgba(0,0,0,0.75);
     box-shadow: 2px 8px 24px 2px rgba(0,0,0,0.75);
